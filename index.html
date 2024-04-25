@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlugAuto</title>
+  <link rel="shortcut icon" href="/img/ic-topo-2.png" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="/_css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="/Js/script.js"></script>
+
+</head>
+
+<!-- Navbar Geral do Site -->
+<div class="barraDeNavegaçao">
+
+  <div class="caimento">
+    <button class="botaodecair">Estadia
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">Camping Livre</a>
+      <a href="#">Hotéis dos Mares</a>
+    </div>
+  </div>
+  <div class="caimento">
+    <button class="botaodecair">Lazer
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">TurisPar</a>
+      <a href="#">TOUR PHB</a>
+      <a href="#">Porto do Artesanato</a>
+      <a href="#">SkarRoller</a>
+      <a href="#">Water Kite</a>
+    </div>
+  </div>
+  <div class="caimento">
+    <button class="botaodecair">Alimentação
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">Bankai</a>
+      <a href="#">Gellaticus</a>
+      <a href="#">Liga On</a>
+    </div>
+  </div>
+  <div class="caimento">
+    <button class="botaodecair">Transporte
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">Casa da Aventura</a>
+      <a href="#">Alucar</a>
+      <a href="#">L.A Passeio Marítimo</a>
+      <a href="#">Bem Veículado</a>
+    </div>
+  </div>
+  <a href="#" class="sobre-css">Sobre</a>
+  <a class="login" href="#">Login</a>
+</div>
+
+
+<header class="header">
+
+  <!--Código da Imagem Logo:
+    <img src="/img/Icon-auto.png" alt="Icon-auto">-->
+  <a href="index.html"><img src="/img/ALUGAUTO.png" class="Logo-home" alt="imagem do Logotipo"></a>
+  <nav> <!--Navbar da Empresa-->
+    <ul class="menu">
+      <li><a href="Nossos-veiculos.html">Nossos Veículos</a></li>
+      <li><a href="Alugar.html">Alugar</a></li>
+      <li><a href="Fale-conosco.html">Fale Conosco</a></li>
+      <li><a href="Servicos.html">Serviços</a></li>
+      <li><a href="Ofertas-especiais.html">Ofertas Especiais</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <!--Área de Cadastro inicial-->
+  <div class="background-image">
+    <img src="/img/bg-car.png" alt="carrões" class="bg-car">
+    <div class="h1-home">
+      <h1>BUSQUE CONFORTO E VERSATILIDADE <BR> AO PEGAR A ESTRADA</h1>
+    </div>
+  </div>
+
+  <!--Botão para Cadastro inicial-->
+  <button class="alugar-veiculos-button" id="alugarVeiculosButton" onclick="toggleOpcoesAluguel()">QUERO ALUGAR</button>
+
+  <div class="opcoes-aluguel-veiculos" id="opcoesAluguel">
+    <label for="cidade-estado">Qual o seu Estado?</label>
+    <br>
+    <select class="cidade-estado">
+      <option value="cidade1">Selecione o Estado</option>
+      <option value="cidade2">Acre</option>
+      <option value="cidade3">Alagoas</option>
+      <option value="cidade4">Amapá</option>
+      <option value="cidade5">Amazonas</option>
+      <option value="cidade6">Bahia</option>
+      <option value="cidade7">Ceará</option>
+      <option value="cidade8">Espírito Santo</option>
+      <option value="cidade9">Goiás</option>
+      <option value="cidade10">Maranhão</option>
+      <option value="cidade11">Mato Grosso</option>
+      <option value="cidade12">Mato Grosso do Sul</option>
+      <option value="cidade13">Minas Gerais</option>
+      <option value="cidade14">Pará</option>
+      <option value="cidade15">Paraíba</option>
+      <option value="cidade16">Paraná</option>
+      <option value="cidade17">Pernambuco</option>
+      <option value="cidade18">Piauí</option>
+      <option value="cidade19">Rio de Janeiro</option>
+      <option value="cidade20">Rio Grande do Norte</option>
+      <option value="cidade21">Rio Grande do Sul</option>
+      <option value="cidade22">Rondônia</option>
+      <option value="cidade23">Roraima</option>
+      <option value="cidade24">Santa Catarina</option>
+      <option value="cidade25">São Paulo</option>
+      <option value="cidade26">Sergipe</option>
+      <option value="cidade27">Tocantins</option>
+      <option value="cidade28">Distrito Federal</option>
+
+    </select>
+    <br>
+    <label for="cidade-estado">Qual a cidade que deseja retirar o Veículo?</label>
+    <br>
+    <select class="cidade-estado">
+      <option value="cidade1">Selecione a Cidade</option>
+      <option value="cidade2">Rio Branco</option>
+      <option value="cidade3">Maceió</option>
+      <option value="cidade4">Macapá</option>
+      <option value="cidade5">Manaus</option>
+      <option value="cidade6">Salvador</option>
+      <option value="cidade7">Fortaleza</option>
+      <option value="cidade8">Vitória</option>
+      <option value="cidade9">Goiânia</option>
+      <option value="cidade10">São Luís</option>
+      <option value="cidade11">Cuiabá</option>
+      <option value="cidade12">Campo Grande</option>
+      <option value="cidade13">Belo Horizonte</option>
+      <option value="cidade14">Belém</option>
+      <option value="cidade15">João Pessoa</option>
+      <option value="cidade16">Curitiba</option>
+      <option value="cidade17">Recife</option>
+      <option value="cidade18">Teresina</option>
+      <option value="cidade19">Parnaíba</option>
+      <option value="cidade20">Rio de Janeiro</option>
+      <option value="cidade21">Natal</option>
+      <option value="cidade22">Porto Alegre</option>
+      <option value="cidade23">Porto Velho</option>
+      <option value="cidade24">Boa Vista</option>
+      <option value="cidade25">Florianópolis</option>
+      <option value="cidade26">São Paulo</option>
+      <option value="cidade27">Aracaju</option>
+      <option value="cidade28">Palmas</option>
+      <option value="cidade29">Brasilia</option>
+
+    </select>
+    <br>
+    <label for="servicos-especiais">Selecione os Serviços Especiais:</label>
+    <div class="servicos-especiais">
+      <input type="checkbox" id="seguro" name="servicos-especiais">
+      <label for="seguro">Seguro</label>
+      <input type="checkbox" id="gps" name="servicos-especiais">
+      <label for="gps">GPS</label>
+      <input type="checkbox" id="cadeira-bebe" name="servicos-especiais">
+      <label for="cadeira-bebe">Cadeira de Bebê</label>
+      <input type="checkbox" id="cadeira-bebe" name="servicos-especiais">
+      <label for="cadeira-bebe">Sem Motorista</label>
+    </div>
+    <br>
+    <br>
+
+    <label for="data-retirada">Data de Retirada:</label>
+    <input type="date" id="data-retirada">
+    <label for="data-devolucao">Data de Devolução:</label>
+    <input type="date" id="data-devolucao">
+
+    <div class="btn-opcoes">
+      <button class="btn-cancelar"><a href="index.html">Cancelar</a></button>
+      <a href="#" class="btn-continue"><button onclick="continuarAluguel()" class="btn-ct">Continuar</button></a>
+    </div>
+  </div>
+  <!-- Área do Video de Apresentação -->
+  <section>
+    <div class="bg-video">
+      <!-- Teste 
+        <div class="gradient-rb"> -->
+      <iframe width="650" height="445" class="video-st"
+        src="https://www.youtube.com/embed/0I1x9ew1OZU?si=ukffNzj043BbfwXG" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <!-- </div> -->
+      <h1 class="h1-video">Conheça a Empresa de Aluguéis <br> mais bem avaliada de Parnaíba</h1>
+      <p class="p-video">Com a AlugAuto você não precisa esquentar a cabeça <br> com a burocracia! Seu carro está com
+        você para <br>te acompanhar em momentos inesqueciveis <br> sem pesar no seu bolso.</p>
+    </div>
+  </section>
+
+  <!-- Área para CTA-->
+  <div class="bg-encontre">
+    <h1 class="h1-encontre">Não importa o Tamanho, <br>temos o veículo ideal para você</h1>
+    <section>
+      <div class="container">
+        <!-- Carros Simples -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples', event)">
+          <div class="card">
+            <img src="/img/carros-simples.png" alt="Carro" id="car-simples">
+            <h2>Carros Populares</h2>
+          </div>
+        </a>
+
+        <!-- SUVs -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples2', event)">
+          <div class="card">
+            <img src="/img/suvs.png" alt="Suv" id="car-simples">
+            <h2>SUVs</h2>
+          </div>
+        </a>
+
+        <!-- Limosine -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples3', event)">
+          <div class="card">
+            <img src="/img/limosine.png" alt="Limosine" id="car-simples">
+            <h2>Limosine</h2>
+          </div>
+        </a>
+
+        <!-- Vans -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples4', event)">
+          <div class="card">
+            <img src="/img/vans.png" alt="Vans" id="car-simples">
+            <h2>Vans</h2>
+          </div>
+        </a>
+
+        <!-- Caminhonetes -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples5', event)">
+          <div class="card">
+            <img src="/img/caminhonetes.png" alt="caminhonetes" id="car-simples">
+            <h2>Caminhonetes</h2>
+          </div>
+        </a>
+
+        <!-- Carros Esportivos -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples6', event)">
+          <div class="card">
+            <img src="/img/carros-esportivos.png" alt="Carros esportivos" id="car-simples">
+            <h2>Carros Esportivos</h2>
+          </div>
+        </a>
+
+        <!-- Carros Elétricos ou Híbridos -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples7', event)">
+          <div class="card">
+            <img src="/img/carros-eletricos.png" alt="Carros elétricos" id="car-simples">
+            <h2>Carros Elétricos ou Híbridos</h2>
+          </div>
+        </a>
+        <!-- Carros Retrô -->
+        <a href="#" onclick="mostrarTexto('texto-car-simples8', event)">
+          <div class="card">
+            <img src="/img/carros-retro.png" alt="Carros Retro" id="car-simples">
+            <h2>Carros Retrô</h2>
+          </div>
+        </a>
+
+        <!-- Mais 
+        <div class="card">
+          <img src="/img/mais.png" alt="mais" id="car-simples">
+          <h2>Mais</h2>
+        </div>
+        -->
+
+        <!-- Modelos de carros Simples -->
+
+        <div class="texto-adicional" id="texto-car-simples">
+          <p><b>Principais Carros Populares:</b> <br><br> - Corola Cross <br><br> - Honda Civic <br><br> - Volkswagen
+            Gol</p>
+        </div>
+
+        <!-- Modelos de carros SUVS -->
+
+        <div class="texto-adicional" id="texto-car-simples2">
+          <p><b>Principais SUVS:</b> <br><br> - Toyota RAV4 <br><br> - Honda CR-V <br><br> - Jeep Cherok</p>
+        </div>
+
+        <!-- Modelos de Limosine -->
+
+        <div class="texto-adicional" id="texto-car-simples3">
+          <p><b>Principais Limosines:</b> <br><br> - Lincon Town Car <br><br> - Mercedes Benz Classic S <br><br> - BMW
+            Séries 7</p>
+        </div>
+
+        <!-- Modelos de Vans -->
+
+        <div class="texto-adicional" id="texto-car-simples4">
+          <p><b>Principais Vans:</b> <br><br> - Mercedes-Benz Sprinter <br><br> - Ford Transit <br><br> - Chevrolet
+            Express</p>
+        </div>
+
+        <!-- Modelos de Caminhonetes -->
+
+        <div class="texto-adicional" id="texto-car-simples5">
+          <p><b>Principais Caminhonetes:</b> <br><br> - Ford F-150 <br><br> - Chevrolet Silverado <br><br> - RAM 1500
+          </p>
+        </div>
+
+        <!-- Modelos de Carros Esportivos -->
+
+        <div class="texto-adicional" id="texto-car-simples6">
+          <p><b>Principais Esportivos:</b> <br><br> - Porsche 911 <br><br> - Ferrari 488 <br><br> - Lamborghini Huracan
+          </p>
+        </div>
+
+        <!-- Modelos de Carros elétricos ou híbridos -->
+
+        <div class="texto-adicional" id="texto-car-simples7">
+          <p><b>Principais Elétricos:</b> <br><br> - Tesla Model S <br><br> - Toyota Prius <br><br> - Nissan Leaf</p>
+        </div>
+
+        <!-- Modelos de Carros Retrô -->
+
+        <div class="texto-adicional" id="texto-car-simples8">
+          <p><b>Principais Retrô:</b> <br><br> - Dodge Charger 1970 <br><br> - Mustang GT 500 1967 <br><br> - Restomod
+            1960 Chevrolet Impala</p>
+        </div>
+      </div>
+      <section>
+        <div class="vantagens-servico">
+          <h1>Vantagens de Alugar com a AlugAuto</h1>
+          <div class="container2">
+            <div class="card2">
+              <img src="img/Motivos-pra-alugar-conosco/variedades-icon.png" alt="Variedade de Veículos na empresa">
+              <h6>Ampla Seleção de Veículos</h6>
+              <p style="font-size: 20px;">De Veiculos mais econônicos até os mais robustos, você pode encotrar uma
+                perfeita união entre conforto e Lucratividade. Seja para uma viagem na cidade ou uma aventura fora dela,
+                estamos aqui para oferecer a melhor experiência em Aluguel de Carros de Parnaíba</p>
+            </div>
+
+            <div class="card2">
+              <img src="img/Motivos-pra-alugar-conosco/Reserve-icon.png" alt="Variedade de Veículos na empresa">
+              <h6>Reserve seu automóvel sem Burocracia</h6>
+              <p>A sua viagem está há alguns cliques de você. Com o nosso sistema de gerenciamento nunca foi tão fácil
+                escolher as datas e definir os pagamentos de suas reservas.</p>
+            </div>
+
+            <div class="card2">
+              <img src="img/Motivos-pra-alugar-conosco/Comparar-icon.png" alt="Variedade de Veículos na empresa">
+              <h6>Compare os Preços com a concorrência</h6>
+              <p style="font-size: 20px;">O enfoque da empresa está na transparência com o Cliente,
+                por isso que a Alugauto esclarece os valores de Juros no
+                ato de pagamento e após quaisquer inadimplências, o que garante a
+                economia de nossos usuários</p>
+            </div>
+
+            <div class="card2">
+              <img src="img/Motivos-pra-alugar-conosco/limpeza-icon.png" alt="Variedade de Veículos na empresa">
+              <h6>Limpeza e Segurança</h6>
+              <p style="font-size: 20px;">os nossos veículos são regularmente inspecionados e seguem as normas da
+                ANVISA, organizados e limpos para reduzir a contaminação devido ao contingente de ultilizadores. Além
+                disso, todos os nossos carros possuem Airbag embutido (inclusive nas portas laterais) para garantir uma
+                proteção extra.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Parceiros -->
+      <section>
+        <div class="parceiros">
+          <h1 class="h1-parceiros">Parceiros</h1>
+          <div class="card-parceiros">
+            <img src="/img/Parceiros/Max Sidhartha -Bem_veiculado-copia.png"
+              alt="Bem Veiuculado: Logo da empresa de Veículos">
+          </div>
+          <div class="card-parceiros">
+            <img src="/img/Parceiros/Jaiza -Tourphb.png" alt="Tour PHB: Logo da empresa de Guia Turístico">
+          </div>
+
+          <div class="card-parceiros">
+            <img src="/img/Parceiros/Turis-removebg.png" alt="Turis PHB: Logo da empresa de Turismo" id="Turis">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Área de Receber Ofertas Exclusivas -->
+
+      <section>
+        <div class="Boxes-ofertas">
+          <div class="boxes-card">
+            <h1>Baixe o App para <br>
+              Dispositivos Móveis</h1>
+            <div class="img-cll">
+              <img src="/img/Smartphone-app.png" alt="">
+            </div>
+          </div>
+          <div class="boxes-card">
+            <h1>Receba Ofertas Exclusivas</h1>
+            <p>Insira seu endereço de email para receber ofertas exclusivas.</p>
+            <div class="email-area">
+              <input type="email" class="email-input" placeholder="Digite seu e-mail">
+              <button type="submit" class="enviar">Enviar</button>
+            </div>
+          </div>
+      </section>
+
+</body>
+
+<!-- Footer do Site -->
+<footer class="pezao">
+  <div class="pezao-conteudo">
+    <div class="section">
+      <h1 class="AlugAuto-h1">AlugAuto</h1>
+      <div class="section">
+        <ul>
+          <li><a href="#">Promoções</a></li>
+          <li><a href="#">Cashback</a></li>
+          <li><a href="#">Assinatura Mensal</a></li>
+          <li><a href="#">Aplicativo AlugAuto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Sobre Nós</h3>
+      <ul>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">LGPD</a></li>
+        <li><a href="#">Central de Ajuda</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Formas de Pagamento</h3>
+      <ul>
+        <li>Visa</li>
+        <li>MasterCard</li>
+        <li>PayPal</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Redes Sociais</h3>
+      <div class="redes-sociais">
+        <a href="#" class="social-icon"> </a>
+        <a href="#" class="social-icon">  </a>
+        <a href="#" class="social-icon">  </a>
+        <a href="#" class="social-icon">  </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</html>

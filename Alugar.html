@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluguel de Carros</title>
+  <link rel="stylesheet" href="/_css/Alugar.css">
+  <link rel="shortcut icon" href="/img/ic-topo-2.png" type="image/x-icon" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<!-- Navbar Geral do Site -->
+<div class="barraDeNavegaçao">
+
+  <div class="caimento">
+    <button class="botaodecair">Estadia
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">Camping Livre</a>
+      <a href="#">Hotéis dos Mares</a>
+    </div>
+  </div>
+  <div class="caimento">
+    <button class="botaodecair">Lazer
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">TurisPar</a>
+      <a href="#">TOUR PHB</a>
+      <a href="#">Porto do Artesanato</a>
+      <a href="#">SkarRoller</a>
+      <a href="#">Water Kite</a>
+    </div>
+  </div>
+  <div class="caimento">
+    <button class="botaodecair">Alimentação
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">Bankai</a>
+      <a href="#">Gellaticus</a>
+      <a href="#">Liga On</a>
+    </div>
+  </div>
+  <div class="caimento">
+    <button class="botaodecair">Transporte
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="conteudoDeCaida">
+      <a href="#">Casa da Aventura</a>
+      <a href="#">Alucar</a>
+      <a href="#">L.A Passeio Marítimo</a>
+      <a href="#">Bem Veículado</a>
+    </div>
+  </div>
+  <a href="#" class="sobre-css">Sobre</a>
+  <a class="login" href="#">Login</a>
+</div>
+
+
+<header class="header">
+
+  <!--Código da Imagem Logo:
+    <img src="/img/Icon-auto.png" alt="Icon-auto">-->
+  <a href="index.html"><img src="/img/ALUGAUTO.png" class="Logo-home" alt="imagem do Logotipo"></a>
+  <nav> <!--Navbar da Empresa-->
+    <ul class="menu">
+      <li><a href="Nossos-veiculos.html">Nossos Veículos</a></li>
+      <li><a href="Alugar.html" id="A-Selecionados">Alugar</a></li>
+      <li><a href="Fale-conosco.html">Fale Conosco</a></li>
+      <li><a href="Servicos.html">Serviços</a></li>
+      <li><a href="Ofertas-especiais.html">Ofertas Especiais</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<body>
+  <div class="city-banner">
+    <h1>Modelos de Automóveis disponíveis para a cidade de São Paulo</h1>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      
+      <div class="filter">
+        <h2>Filtro de Valor</h2>
+        <input type="range" id="priceRange" min="0" max="100" value="50">
+        <p>Valor: <span id="priceValue">$500 - $5000</span></p>
+      </div>
+      <div class="options">
+        <h2>Categoria de Carro</h2>
+        <label><input type="checkbox" name="category" value="compact"> Popular</label><br>
+        <label><input type="checkbox" name="category" value="sedan"> SUV</label><br>
+        <label><input type="checkbox" name="category" value="suv"> Carros Esportivos</label><br>
+      </div>
+      <div class="promotions">
+        <h2>Promoções</h2>
+        <p>Confira nossas ofertas especiais!</p>
+      </div>
+      <div class="extras">
+        <h2>Extras</h2>
+        <label><input type="checkbox" name="insurance"> Seguro</label><br>
+        <label><input type="checkbox" name="driver"> Com Motorista</label><br>
+        <select name="payment">
+          <option value="credit">Cartão de Crédito</option>
+          <option value="debit">Cartão de Débito</option>
+          <option value="cash">Dinheiro</option>
+        </select>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="car-details">
+        <div class="car">
+          <h2>Corolla Cross</h2>
+          <div class="rating">Avaliação: <span class="stars">★★★★★ (1646)</span></div>
+          <p>Local de Retirada: <span class="location">São Paulo, SP Brasil</span></p>
+          <img src="/img/veiculos/Populares/Corolla Cross.png" alt="Carro">
+          <ul>
+            <li>Ar Condicionado: Sim</li>
+            <li>Capacidade: 5 passageiros</li>
+            <li>Transmissão: Automática</li>
+            <li>Capacidade de Bagagem: 2 malas</li>
+          </ul>
+          <p class="price">Preço: R$169/dia</p>
+          <button class="continue-btn">Continuar</button>
+        </div>
+        <!-- Mais -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
