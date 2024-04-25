@@ -439,6 +439,7 @@ header{
   
   .container {
     max-width: 1200px;
+    max-height: 190px;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -450,13 +451,18 @@ header{
     color: #ffffff;
     font-family: "Tilt Neon";
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     padding-bottom: 2px;
     width: 100px;
+    height: 140px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
+  }
+
+  .card #caminhonetes {
+    margin-left: -7px;
   }
   
  
@@ -712,6 +718,7 @@ header{
   .section {
     flex: 1 1 300px;
     margin-right: 20px;
+    margin-left: 15px;
   }
 
   .pezao-section:last-child {
@@ -719,7 +726,7 @@ header{
   }
 
   .AlugAuto-h1 {
-    padding-left: 5px;
+    padding-left: 15px;
     font-size: 50px;
     font-family: "Tilt Neon";
   }
@@ -757,6 +764,35 @@ header{
   .section ul li a:hover {
     color: red;
     transition: 0.5s;
+  }
+
+  .section ul li img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+  }
+  #Visa {
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    
+  }
+
+  #Mastercard {
+    width: 15%;
+  }
+
+  #Paypal {
+    width: 15%;
+  }
+
+  #Boleto {
+    width: 15%;
   }
 
 
