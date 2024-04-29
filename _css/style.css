@@ -107,6 +107,7 @@ header{
     border-bottom-right-radius: 30px;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 100%;
     
 }
 
