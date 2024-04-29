@@ -12,8 +12,17 @@
     }
 
     .menu li {
-        font-size: 5px;
-        margin-left: 6.5%;
+        font-size: 15px;
+        margin-left: px;
     }
 
+    .menu li a {
+        padding: 0;
+        margin-left: -22px;
+        text-align: center;
+    }
+
+    #NV-Selecionados {
+        margin-left: 38%;
+    }
 }
