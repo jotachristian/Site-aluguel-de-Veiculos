@@ -373,9 +373,6 @@ header{
   .bg-video {
     margin-top: 65vh;
     margin-bottom: 15%;
-    align-items: left;
-    text-align: left;
-    justify-content: left;
     background: linear-gradient(98.3deg, rgb(255, 0, 0) 10.6%, rgb(51, 43, 43) 97.7%);
     height: 600px;
     padding: 200px;
@@ -393,7 +390,7 @@ header{
     text-align: right;
     padding: 5%;
     padding-bottom: 0%;
-    font-size: 45px;
+    font-size: 40px;
     font-family: "Tilt Neon";
     border-right: 4px, solid;
     width: 49ch;
@@ -573,6 +570,7 @@ header{
     padding-bottom: 0;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    text-align: center;
   }
 
   .card2 p {
@@ -646,6 +644,7 @@ header{
     text-align: center;
     justify-content: center;
     display: inline-block;
+    margin-left: -25%;
   }
 
   .boxes-card h1 {
