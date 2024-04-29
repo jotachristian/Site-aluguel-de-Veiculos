@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@media (max-width: 760px) {
+    .barraDeNavegaçao {
+        width: 390px;
+        overflow-y: hidden;
+
+    }
+    
+    header {
+        max-width: 100%; 
+    }
+
+    .menu li {
+        font-size: 5px;
+        margin-left: 6.5%;
+    }
+
+}

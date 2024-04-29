@@ -562,7 +562,7 @@ header{
   }
 
   .card2 {
-    text-align: center;
+    text-align: justify;
     padding-top: 2px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -579,13 +579,13 @@ header{
   .card2 p {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    text-align: left;
+    text-align: justify;
     padding-left: 30px;
 
   }
   .card2 img {
     align-items: center;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     padding-left: 34%;
     padding-top: 30%;
