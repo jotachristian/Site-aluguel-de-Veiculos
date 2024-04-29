@@ -419,6 +419,7 @@ header{
   
   .p-video {
     color: #fff;
+    margin-top: 15%;
     position: absolute;
     font-family: "Tilt Neon";
   }

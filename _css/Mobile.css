@@ -1,13 +1,10 @@
 @charset "utf-8";
 
 @media (max-width: 760px) {
-    
-    *{
-        overflow-x: none;
-    }
-    
+
     .barraDeNavegaçao {
         width: 390px;
+        overflow-y: hidden;
 
     }
 
@@ -22,6 +19,7 @@
 
     .bg-car {
         height: 300%;
+        overflow-y: hidden;
     }
 
 
