@@ -153,6 +153,10 @@ header{
 /* Conteúdo da página */
 
   
+#h2-veiculos {
+  color: #ff2600;
+  font-family: cursive;
+}
 .container {
   max-width: 1200px;
   margin: 20px auto;

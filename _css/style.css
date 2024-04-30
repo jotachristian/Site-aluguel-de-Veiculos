@@ -393,7 +393,7 @@ header{
     font-size: 40px;
     font-family: "Tilt Neon";
     border-right: 4px, solid;
-    width: 49ch;
+    width: 50ch;
     overflow: hidden;
     animation: typing 3s steps(50), blinking 0.5s infinite step-end alternate;
 
@@ -644,7 +644,8 @@ header{
     text-align: center;
     justify-content: center;
     display: inline-block;
-    margin-left: -25%;
+    margin-left: 0%;
+    margin-right: 5%;
   }
 
   .boxes-card h1 {

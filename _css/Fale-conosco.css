@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -100,7 +102,7 @@ body {
   header{
       display: flex;
       justify-content: space-evenly;
-      background-color: #000000b3;
+      background-color: #000000;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
       align-items: center;
@@ -122,6 +124,8 @@ body {
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
+      list-style: none;
+      font-size: 23.05px;
   }
   
   .menu li a {
@@ -130,11 +134,14 @@ body {
        /*border: solid black;*/
        color: white;
        font-weight: bold;
+       text-decoration: none;
+       
   }
   
   .menu li :hover {
       color: red;
       transition: 0.6s;
+      
   }
   
   .Logo-home {
@@ -143,6 +150,10 @@ body {
       padding: 15px;
       padding-bottom: 10%;
       align-items: center;
+  }
+
+  #A-Selecionados {
+    color: red;
   }
   
   
@@ -178,6 +189,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 5%;
   }
   
   button:hover {

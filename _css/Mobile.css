@@ -2,6 +2,9 @@
 
 @media (max-width: 760px) {
 
+    html {
+        width: 390px;
+    }
     .barraDeNavegaçao {
         width: 390px;
 
@@ -12,31 +15,32 @@
         overflow-y: hidden; 
     }
 
-    .menu {
-        width: 100%;
-    }
-
-    nav {
-        width: 100%;
-    }
-
     .menu li {
         font-size: 15px;
-        margin-left: -0.5%;
+        margin-left: px;
+    }
+
+    .menu li a {
+        padding: 0;
+        margin-left: -20px;
+        text-align: center;
+    }
+
+    #NV-Selecionados {
+        margin-left: 95%;
+        margin-top: -40%;
     }
 
     .bg-car {
         height: 800px;
-        width: 400px;
-        background-image: url(../img/Bg-car-mobile.png);
-        overflow-y: hidden;
+        overflow-x: hidden;
         /*border: #000 solid 4px;*/
     }
 
 
     .h1-home h1 {
         font-size: 20px;
-        margin-top: -100%;
+        margin-top: -145%;
     }
 
     #alugarVeiculosButton {
@@ -67,8 +71,8 @@
     }
 
     .video-st {
-        margin-left: -50%;
-        width: 350px;
+        margin-left: -35%;
+        width: 250px;
         height: 200px;
     }
 
@@ -79,19 +83,17 @@
         margin-left: -120%;
         margin-top: -35%;
         font-size: 20px !important;
-        border: #000 solid 4px;
     }
 
     .bg-video .p-video {
-        margin-right: 5%;
+        margin-left: -39%;
+        margin-top: 75%;
     }
 
     .p-video {
         text-align: left !important;
         position: absolute;
         margin-left: -45%;
-        margin-top: 70%;
-        border: #000 solid 4px;
     }
 
     .bg-encontre {
@@ -205,6 +207,10 @@
         height: 1100px;
     }
 
+    #mobile-parceiros {
+        width: 100%;
+    }
+
     .parceiros .card-parceiros img {
         max-width: 30%;
     }
@@ -221,4 +227,12 @@
     footer {
         overflow-y: hidden;
     }
+
+    .AlugAuto-h1 {
+        margin-left: -15px;
+    }
+
+    #sectalug {
+        margin-left: 0px;
+      }
 }
