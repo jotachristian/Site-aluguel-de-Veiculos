@@ -20,8 +20,6 @@ function toggleOpcoesAluguel() {
 function continuarAluguel() {
     alert('AGUARDE ENQUANTO CARREGAMOS SUAS INFORMAÇÕES...');
 }
-
-// Verifica quando o usuário rola a página e oculta o retângulo se necessário
 window.addEventListener('scroll', function() {
     var retangulo = document.getElementById('retangulo');
     if (window.scrollY > 0) {
