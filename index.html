@@ -88,16 +88,20 @@
   <!--Área de Cadastro inicial-->
   <section>
   <div class="background-image">
-    <video><source src="/img/video-principal.mp4"  class="video-bg" autoplay loop width="100%">
-    </video>    
+    <img src="/img/fundogif.gif" alt="Estrada">
   </div>
-  <h1 id="CTA-titulo">BUSQUE CONFORTO E VERSATILIDADE <BR> AO PEGAR A ESTRADA</h1>
+  <h1 id="CTA-titulo">BUSQUE CONFORTO E VERSATILIDADE <BR> AO PEGAR A ESTRADA
+    <section class="Cadastro-hp">
+      <button class="alugar-veiculos-button" id="alugarVeiculosButton" onclick="toggleOpcoesAluguel()">QUERO ALUGAR</button>
+    </section>
+    
+  </h1>
+
 
 </section>
 
   <!--Botão para Cadastro inicial-->
-  <button class="alugar-veiculos-button" id="alugarVeiculosButton" onclick="toggleOpcoesAluguel()">QUERO ALUGAR</button>
-
+  <div class="container">
   <div class="opcoes-aluguel-veiculos" id="opcoesAluguel">
     <label for="cidade-estado">Qual o seu Estado?</label>
     <br>
@@ -130,7 +134,6 @@
       <option value="cidade26">Sergipe</option>
       <option value="cidade27">Tocantins</option>
       <option value="cidade28">Distrito Federal</option>
-
     </select>
     <br>
     <label for="cidade-estado">Qual a cidade que deseja retirar o Veículo?</label>
@@ -192,6 +195,8 @@
       <a href="#" class="btn-continue"><button onclick="continuarAluguel()" class="btn-ct">Continuar</button></a>
     </div>
   </div>
+</div>
+
   <!-- Área do Video de Apresentação -->
   <section>
     <div class="bg-video">
